@@ -1,0 +1,73 @@
+<style id="km-theme">
+/* ===== KINGSBURY & MARSHALL — house theme for every K&M sales room =====
+   Applied last so it wins by source order. Replaces the old desk chrome (SVG mould, side rails,
+   traffic lights) with a navy K&M sidebar + slim top bar, and re-tones the room in K&M colours.
+   The room's own content layout (.center at 1049x904) is untouched, only moved. */
+:root{
+  --km-navy:#0B1B3A; --km-navy-2:#132750; --km-blue:#4F7FFF; --km-blue-lt:#EAF0FF; --km-cream:#FBF7F0;
+  --km-cream-2:#F4EEE3; --km-line:#E7E1D6; --km-text:#0B1B3A; --km-muted:#5D6880;
+  --km-font:"Satoshi","Manrope","Avenir Next","Segoe UI",Helvetica,Arial,sans-serif;
+  /* re-point the room's own tokens */
+  --ink:#0B1B3A; --navy:#0B1B3A; --muted:#5D6880; --paper:#FFFFFF; --paper-2:#FBF7F0; --paper-3:#F4EEE3;
+  --line:#E7E1D6; --slate:#3A4A6B;
+  --blue:#4F7FFF; --blue-d:#2A4DB8; --blue-lt:#EAF0FF; --blue-lt2:#C9D7FF;
+}
+html,body{background:#E9E3D8 !important}
+body,.stage :not(code):not(pre):not(kbd):not(samp){font-family:var(--km-font) !important}
+.stage{background:var(--km-cream) !important;box-shadow:0 30px 90px rgba(11,27,58,.22) !important}
+
+/* old desk chrome off */
+.stage>svg.shell,.traffic,.toggle,.brand-center,.side,.stage>.ruler,.ticks{display:none !important}
+
+/* ---- navy sidebar ---- */
+.km-side{position:absolute;left:0;top:0;width:260px;height:1086px;z-index:5;background:var(--km-navy);color:#fff;
+  display:flex;flex-direction:column;padding:38px 30px 34px}
+.km-mark{font-size:25px;font-weight:600;letter-spacing:-.02em;line-height:1.12}
+.km-mark .amp{color:var(--km-blue)}
+.km-sub{margin-top:10px;font-size:12.5px;color:rgba(255,255,255,.55);letter-spacing:.01em}
+.km-sec{margin:56px 0 14px;font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.42)}
+.km-suite{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px}
+.km-suite li{display:flex;align-items:center;gap:12px;padding:11px 14px;border-radius:12px;font-size:14.5px;font-weight:500;color:rgba(255,255,255,.72)}
+.km-suite li .ix{width:26px;height:26px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex:none;
+  font-size:11px;font-weight:700;background:rgba(255,255,255,.08);color:rgba(255,255,255,.7)}
+.km-suite li.on{background:var(--km-blue);color:#fff;box-shadow:0 8px 22px rgba(79,127,255,.35)}
+.km-suite li.on .ix{background:rgba(255,255,255,.2);color:#fff}
+.km-side-foot{margin-top:auto;font-size:12px;line-height:1.55;color:rgba(255,255,255,.5)}
+.km-side-foot a{color:rgba(255,255,255,.82);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.25)}
+.km-side-foot a:hover{color:#fff;border-color:#fff}
+
+/* ---- top bar ---- */
+.topbar{left:260px !important;width:1188px !important;height:76px !important;border-bottom:1px solid var(--km-line);background:var(--km-cream)}
+.brand-left{left:69px !important;top:26px !important;font-size:20px !important;font-weight:700 !important;letter-spacing:-.02em !important;color:var(--km-navy) !important}
+.brand-left .dot{color:#B7AFA2 !important}
+.brand-left .desk{color:var(--km-blue) !important}
+.km-date{position:absolute;right:70px;top:29px;font-size:13px;font-weight:500;color:var(--km-muted)}
+
+/* ---- the room, moved into the freed space ---- */
+.center{left:329px !important;top:100px !important}
+
+/* ---- colophon ---- */
+.km-colophon{position:absolute;left:260px;right:0;bottom:24px;z-index:4;text-align:center;font-size:12px;font-weight:500;
+  letter-spacing:.02em;color:var(--km-muted)}
+.km-colophon b{color:var(--km-navy);font-weight:700}
+.km-colophon i{display:inline-block;width:4px;height:4px;border-radius:50%;background:#C9C1B3;margin:0 10px;vertical-align:middle}
+.office{display:none !important}
+
+/* ---- content re-tone (shared room classes) ---- */
+.center .card{background:#fff !important;border:1px solid var(--km-line) !important;border-radius:18px !important;
+  box-shadow:0 1px 2px rgba(11,27,58,.04),0 10px 28px rgba(11,27,58,.06) !important}
+.center .section-head h2,.center .card h2{color:var(--km-navy) !important;font-weight:700 !important;letter-spacing:.06em}
+.center .addbox{background:var(--km-cream) !important;border-color:var(--km-line) !important}
+.center .stages i{background:var(--km-blue) !important}
+.center .stages i:nth-child(1){opacity:.45}.center .stages i:nth-child(2){opacity:.62}
+.center .stages i:nth-child(3){opacity:.8}.center .stages i:nth-child(4){opacity:1}
+/* hero greeting becomes a navy K&M band */
+.center .hero.card{background:linear-gradient(135deg,#0B1B3A 0%,#16306A 100%) !important;border:0 !important;
+  box-shadow:0 14px 34px rgba(11,27,58,.22) !important}
+.center .hero.card h1{color:#9DB5FF !important}
+.center .hero.card .say,.center .hero.card .say b{color:#fff !important}
+.center .hero.card .receipt{color:rgba(255,255,255,.5) !important}
+.center .hero.card .hero-rail{border-color:rgba(255,255,255,.14) !important}
+.center .hero.card .flag,.center .hero.card .flag b,.center .hero.card .flag span{color:#fff !important}
+.center .hero.card .flag.scp-f-amber,.center .hero.card .flag.scp-f-amber b,.center .hero.card .flag.scp-f-amber span{color:#FFC46B !important}
+</style>

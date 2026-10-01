@@ -1,0 +1,17 @@
+{
+  "name": "sales-brain-setup",
+  "displayName": "AI Sales Brain",
+  "version": "1.0.0",
+  "description": "Five-question onboarding that builds your AI sales brain, so every other Kingsbury & Marshall sales skill wakes up knowing who you are.",
+  "author": {
+    "name": "Kingsbury & Marshall"
+  },
+  "homepage": "https://kingsbury-marshall-website.vercel.app",
+  "license": "MIT",
+  "keywords": [
+    "sales",
+    "onboarding",
+    "profile",
+    "setup"
+  ]
+}

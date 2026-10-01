@@ -1,0 +1,17 @@
+{
+  "name": "company-researcher",
+  "displayName": "Company Researcher",
+  "version": "1.0.0",
+  "description": "Researches companies — one or four thousand — into ranked cheat sheets: what they do, why now, the angle to use.",
+  "author": {
+    "name": "Kingsbury & Marshall"
+  },
+  "homepage": "https://kingsbury-marshall-website.vercel.app",
+  "license": "MIT",
+  "keywords": [
+    "sales",
+    "research",
+    "prospecting",
+    "qualification"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "kingsbury-marshall-skills",
+  "owner": {
+    "name": "Kingsbury & Marshall",
+    "url": "https://kingsbury-marshall-website.vercel.app"
+  },
+  "description": "The Kingsbury & Marshall sales suite for Claude. Install only the ones you want.",
+  "plugins": [
+    {
+      "name": "sales-brain-setup",
+      "source": "./plugins/sales-brain-setup",
+      "description": "Five quick questions that teach every K&M skill who you are, who you sell to and what you offer.",
+      "category": "sales"
+    },
+    {
+      "name": "company-researcher",
+      "source": "./plugins/company-researcher",
+      "description": "Researches one company or a list of thousands into ranked cheat sheets: what they do, why now, and the angle to use.",
+      "category": "sales"
+    },
+    {
+      "name": "list-builder-apollo",
+      "source": "./plugins/list-builder-apollo",
+      "description": "End-to-end prospect lists through your connected Apollo account. Nothing that costs credits runs without your yes.",
+      "category": "sales"
+    },
+    {
+      "name": "cold-email-builder",
+      "source": "./plugins/cold-email-builder",
+      "description": "Writes a cold email for you, or scores and rebuilds the one you have, on a rubric calibrated against real replies.",
+      "category": "sales"
+    },
+    {
+      "name": "sales-control-panel",
+      "source": "./plugins/sales-control-panel",
+      "description": "Reads any deals export and shows what to do in the next hour, and whether your pipeline can be trusted.",
+      "category": "sales"
+    }
+  ]
+}

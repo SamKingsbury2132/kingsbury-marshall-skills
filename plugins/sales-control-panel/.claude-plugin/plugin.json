@@ -1,0 +1,17 @@
+{
+  "name": "sales-control-panel",
+  "displayName": "Sales Control Panel",
+  "version": "1.0.0",
+  "description": "Reads any deals export and renders your desk: what to do in the next hour, and whether your pipeline can be trusted.",
+  "author": {
+    "name": "Kingsbury & Marshall"
+  },
+  "homepage": "https://kingsbury-marshall-website.vercel.app",
+  "license": "MIT",
+  "keywords": [
+    "sales",
+    "pipeline",
+    "dashboard",
+    "forecast"
+  ]
+}
